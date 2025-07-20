@@ -75,7 +75,7 @@
             @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary">{{ $message->exists ? 'Update' : 'Create' }}</button>
+            <button type="submit" class="btn btn-secondary">{{ $message->exists ? 'Update' : 'Create' }}</button>
         </form>
     </div>
 @endsection

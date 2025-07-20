@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'Jersey';
+    src: url("/css/fonts/Jersey10.ttf") format("truetype");
+}
+@font-face {
+    font-family:'Roboto';
+    src: url("/css/fonts/RobotoRegular.ttf") format("truetype");
+}
+.h1 ,h1, h2, .h3, .nav-link{
+    font-family: 'Jersey', sans-serif;
+}
+.nav-link{
+    font-size: 2rem;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #4A4C74;
+    color: #cbd5e0;
+}
+.text-muted{
+    color: #cbd5e0!important;
+}
+.card{
+    color: #000000A6;
+}

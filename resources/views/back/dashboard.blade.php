@@ -46,7 +46,7 @@ lorem ipsum
     </div>
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-secondary">Sign in</button>
   </div>
 </form>
 @endsection

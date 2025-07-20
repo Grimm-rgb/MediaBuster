@@ -62,7 +62,7 @@
             @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary">{{ $comment->exists ? 'Update' : 'Create' }}</button>
+            <button type="submit" class="btn btn-secondary">{{ $comment->exists ? 'Update' : 'Create' }}</button>
         </form>
     </div>
 @endsection

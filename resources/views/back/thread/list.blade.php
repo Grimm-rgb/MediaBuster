@@ -12,7 +12,7 @@ Thread
     </div>
 @endif
 
-<a href="{{ route('back.thread.form') }}" class="btn btn-primary">
+<a href="{{ route('back.thread.form') }}" class="btn btn-secondary">
     <i class="bi bi-plus"></i>
     Add thread
 </a>
@@ -30,7 +30,7 @@ Thread
             <th scope="row">{{$thread->id}}</th>
             <td>{{$thread->title}}</td>
             <td class="d-flex d-inline justify-content-end gap-2">
-                <a class="btn btn-primary" href="{{ route('back.thread.form', $thread->id) }}">
+                <a class="btn btn-secondary" href="{{ route('back.thread.form', $thread->id) }}">
                     <i class="bi bi-pen"></i>
                     Edit
                 </a>

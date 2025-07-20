@@ -12,11 +12,11 @@ User
       </div>
   @endif
 
-  <a href="{{ route('back.user.form') }}" class="btn btn-primary">
+  <a href="{{ route('back.user.form') }}" class="btn btn-secondary">
     <i class="bi bi-plus"></i>
     Add user
   </a>
-  
+
   <table class="table">
   <thead>
     <tr>
@@ -34,7 +34,7 @@ User
         <td>{{$user->name}}</td>
         <td>{{$user->email}}</td>
         <td class="d-flex d-inline justify-content-end gap-2">
-            <a class="btn btn-primary" href="{{ route('back.user.form', $user->id) }}">
+            <a class="btn btn-secondary" href="{{ route('back.user.form', $user->id) }}">
               <i class="bi bi-pen"></i>
               Edit
             </a>

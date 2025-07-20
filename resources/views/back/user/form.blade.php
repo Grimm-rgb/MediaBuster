@@ -77,7 +77,7 @@
             @endif
         </div>
 
-        <button type="submit" class="btn btn-primary">{{ $user->exists ? 'Update' : 'Create' }}</button>
+        <button type="submit" class="btn btn-secondary">{{ $user->exists ? 'Update' : 'Create' }}</button>
     </form>
 </div>
 @endsection

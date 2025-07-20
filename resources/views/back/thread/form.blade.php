@@ -29,7 +29,7 @@
                 @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary">{{ $thread->exists ? 'Update' : 'Create' }}</button>
+            <button type="submit" class="btn btn-secondary">{{ $thread->exists ? 'Update' : 'Create' }}</button>
         </form>
     </div>
 @endsection

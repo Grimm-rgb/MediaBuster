@@ -12,7 +12,7 @@
                             <p class="card-text">{{$message->body}}</p>
                         </div>
                         <div class="card-footer border-0" style="background-color: white">
-                            <a href="{{route("show.message", $message->id)}}" class="btn btn-secondary">See more</a>
+                            <a href="{{route("show.message", $message->id)}}" class="btn btn-secondary" wire:navigate.hover>See more</a>
                         </div>
                     </div>
             </div>

@@ -1,5 +1,5 @@
 <div>
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Submit your own research!
     </button>
     <div class="collapse" id="collapseExample">
@@ -25,7 +25,7 @@
                     <input wire:model="attachments" type="file" id="attachments" name="attachments[]" class="form-control" multiple>
                     @error('attachments.*') <span>{{ $message }}</span> @enderror
                 </div>
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="submit" class="btn btn-secondary">Create</button>
             </form>
         </div>
     </div>

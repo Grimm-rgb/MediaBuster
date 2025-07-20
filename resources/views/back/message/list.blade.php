@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <a href="{{ route('back.message.form') }}" class="btn btn-primary">
+    <a href="{{ route('back.message.form') }}" class="btn btn-secondary">
         <i class="bi bi-plus"></i>
         Add message
     </a>
@@ -36,7 +36,7 @@
                 <td>#{{$message->user_id." ".$message->user->email}}</td>
                 <td>{{$message->thread->title}}</td>
                 <td class="d-flex d-inline justify-content-end gap-2">
-                    <a class="btn btn-primary" href="{{ route('back.message.form', $message->id) }}">
+                    <a class="btn btn-secondary" href="{{ route('back.message.form', $message->id) }}">
                         <i class="bi bi-pen"></i>
                         Edit
                     </a>

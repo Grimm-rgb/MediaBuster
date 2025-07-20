@@ -1,7 +1,14 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ThreadController;
+use App\Http\Controllers\UserController;
+use App\Livewire\Pages\AboutUs;
+use App\Livewire\Pages\Gallery;
+use App\Livewire\Pages\Home;
 use App\Livewire\Pages\MessageList;
 use App\Livewire\Pages\ShowMessage;
 use App\Livewire\Pages\ThreadList;
@@ -9,18 +16,8 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\ThreadController;
-use App\Http\Controllers\MessageController;
 
-
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
-
-
- Route::view('dashboard', 'dashboard')
+Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
@@ -29,7 +26,9 @@ Route::get('/', function () {
 Route::get('threads', ThreadList::class)->name('threads');
 Route::get('thread/{threadId}', MessageList::class)->name('thread.messagelist');
 Route::get('message/{messageId}', ShowMessage::class)->name('show.message');
-
+Route::get('/', Home::class)->name('home');
+Route::get('about', AboutUs::class)->name('about');
+Route::get('gallery', Gallery::class)->name('gallery');
 
 
  //routes admin

@@ -62,7 +62,7 @@
             @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary">{{ $answer->exists ? 'Update' : 'Create' }}</button>
+            <button type="submit" class="btn btn-secondary">{{ $answer->exists ? 'Update' : 'Create' }}</button>
         </form>
     </div>
 @endsection

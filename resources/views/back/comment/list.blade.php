@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <a href="{{ route('back.comment.form') }}" class="btn btn-primary">
+    <a href="{{ route('back.comment.form') }}" class="btn btn-secondary">
         <i class="bi bi-plus"></i>
         Add comment
     </a>
@@ -36,7 +36,7 @@
                 <td>#{{$comment->user_id." ".$comment->user->email}}</td>
                 <td>#{{$comment->message_id}}</td>
                 <td class="d-flex d-inline justify-content-end gap-2">
-                    <a class="btn btn-primary" href="{{ route('back.comment.form', $comment->id) }}">
+                    <a class="btn btn-secondary" href="{{ route('back.comment.form', $comment->id) }}">
                         <i class="bi bi-pen"></i>
                         Edit
                     </a>
